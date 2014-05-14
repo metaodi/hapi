@@ -167,7 +167,7 @@ When creating a server instance, the following options configure the server's be
   required by web applications running inside a browser which are loaded from a different domain than the API server. CORS headers are disabled by
   default. To enable, set `cors` to `true`, or to an object with the following options:
     - `origin` - a strings array of allowed origin servers ('Access-Control-Allow-Origin'). The array can contain any combination of fully qualified origins
-      along with origin strings containing a wilcard '*' character, or a single `'*'` origin string. Defaults to any origin `['*']`.
+      along with origin strings containing a wilcard '\*' character, or a single `'*'` origin string. Defaults to any origin `['*']`.
     - `isOriginExposed` - if `false`, prevents the server from returning the full list of non-wildcard `origin` values if the incoming origin header
       does not match any of the values. Has no impact if `matchOrigin` is set to `false`. Defaults to `true`.
     - `matchOrigin` - if `false`, returns the list of `origin` values without attempting to match the incoming origin value. Cannot be used with
